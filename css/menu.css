@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  position: fixed;         
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #3b0f0f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 60px;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #f1c40f;
+}
+
+.nav a.active {
+  background: #f39c12;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+
+.menu {
+  background: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  height: 100vh;                 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;             
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 40px;
+  margin: 80px;
+  height: 200px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.item {
+  max-width: 250px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #dcdcdc;
+  line-height: 1.4;
+}

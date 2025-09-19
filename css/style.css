@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
+
+body {
+    background-color: #331616;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo h1 {
+    text-decoration: none;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+   
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+nav ul li a:hover {
+    color: #030303;
+    background-color: #e67600;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+     
+}
+
+.home-text {
+    max-width: 50%;
+   
+}
+
+h3 {
+    font-size: 28px;
+    color: #ff8c00;
+    margin-bottom: 10px;
+    font-family: Miniver, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.buttons button {
+    background-color: #ff8c00;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    color: rgb(14, 13, 13);
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #e67600;
+}
+
+.home-img img {
+    width: 400px;
+}
