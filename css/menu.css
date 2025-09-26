@@ -24,10 +24,12 @@ body{
   position: fixed;
   top:0;left:0;width:100%;z-index:99;
 }
+
 .contenedor-header header{
   max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
   padding:12px 20px;
 }
+
 .logo a{font-family:'Righteous',cursive;color:#fff;text-decoration:none;font-size:20px}
 .navegacion ul{display:flex;gap:24px;list-style:none}
 .navegacion a{color:#fff;text-decoration:none;padding:10px 14px;border-radius:20px;transition:transform .18s, background .18s}
@@ -47,6 +49,18 @@ body{
 }
 .subrayado{
   width:72px;height:5px;background:var(--accent);margin:14px auto 34px;border-radius:4px;
+}
+
+.carrito #contador {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background-color: #f3961c;
+  color: aliceblue;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 50%;
 }
 
 .contenedor-menu{
