@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () =>{ 
-  const comprar = document.querySelectorAll(".btn add-to-cart");
+  const comprar = document.querySelectorAll(".btn.add-to-cart");
   const carrito = document.getElementById("carrito");
   const contador = document.getElementById("contador");
 
