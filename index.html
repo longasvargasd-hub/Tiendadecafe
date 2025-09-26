@@ -3,41 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Tienda</title>
 </head>
 <body>
     <div class="header">
-  <header>
-    <div class="logo">
-    <h1>☕Coffee</h1>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./contactenos.html">Contactenos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="home">
-        <div class="texto">
-            <h3>El mejor café</h3>
-            <h1>Haz tu día genial con nuestro especial Coffee</h1>
-            <p>Bienvenido a nuestro paraíso del café, donde cada grano cuenta una historia y cada taza despierta alegría.</p>
-            <div class="buttons">
-                <button>Ordenar ahora</button>
-                <button>Contáctanos</button>
+        <header>
+            <div class="logo">
+                <h2>☕Coffee</h2>
             </div>
-        </div>
-        <div class="imagen">
-            <img src="./img/coffee-hero-section.png" alt="Café">
-        </div>
-  </section>
-</body>
-</html>
-  </section>
-</div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./contactenos.html">Contactenos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="texto">
+                <h3>El mejor café</h3>
+                <h1>Haz tu día genial con nuestro especial Coffee</h1>
+                <p>Bienvenido a nuestro paraíso del café, donde cada grano cuenta una historia y cada taza despierta alegría.</p>
+                <div class="buttons">
+                    <button>Ordenar ahora</button>
+                    <button>Contáctanos</button>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="./img/coffee-hero-section.png" alt="Café">
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

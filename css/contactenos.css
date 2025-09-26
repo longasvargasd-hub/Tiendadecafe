@@ -1,44 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat:wght@400;600;700&display=swap');
 
+:root {
+  --header-bg: #3b141c;
+  --accent: #f3961c;
+  --accent-hover: #e67600;
+  --text-dark: #333;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
   background: #f9f9f9;
-  color: #333;
-  padding: 40px;
+  color: var(--text-dark);
+  padding: 0;
+  margin: 0;
 }
 
-header {
-  background: #4b1f24;
+/* ---------- HEADER ---------- */
+.contenedor-header {
+  background: var(--header-bg);
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.contenedor-header header {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  justify-content: space-between;
+  padding: 12px 20px;
 }
-
-header .logo {
+.logo a {
+  font-family: 'Righteous', cursive;
   color: #fff;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
   text-decoration: none;
+  font-size: 20px;
+}
+.navegacion ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  font-size: 15px;
+}
+.navegacion a {
   color: #fff;
-  font-weight: 500;
-  transition: color 0.3s;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+.navegacion a:hover,
+.navegacion a.activo {
+  background: var(--accent);
+  color: #1f0b07;
 }
 
-header nav ul li a:hover {
-  color: #f7c04a;
+/* ---------- MENÚ RESPONSIVO ---------- */
+.menu-checkbox {
+  display: none;
+}
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: var(--accent);
+  cursor: pointer;
+  margin-left: 500px;
 }
 
- 
+@media (max-width: 768px) {
+  .navegacion ul {
+    flex-direction: column;
+    background: var(--header-bg);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    display: none;
+    padding: 20px;
+    border-radius: 6px;
+    gap: 18px;
+  }
+  .menu-checkbox:checked ~ .navegacion ul {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.contact-section {
+  padding: 120px 40px 40px; /* espacio extra arriba por el header fijo */
+}
+
 .page-title {
   text-align: center;
   font-size: 28px;
@@ -51,7 +106,7 @@ header nav ul li a:hover {
   display: block;
   width: 60px;
   height: 3px;
-  background: #f4a51c;
+  background: var(--accent);
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -66,7 +121,6 @@ header nav ul li a:hover {
   border-radius: 6px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
-
 .contact-list {
   list-style: none;
   display: flex;
@@ -86,7 +140,6 @@ header nav ul li a:hover {
   min-width: 22px;
   text-align: center;
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -102,7 +155,7 @@ header nav ul li a:hover {
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #f4a51c;
+  border-color: var(--accent);
   outline: none;
 }
 .btn {
